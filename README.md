@@ -156,16 +156,16 @@ The dataset contains synthetic or practice-project data and should not be presen
 - Excel data cleaning and analysis: Completed
 - SQL analysis and validation: Completed
 - Power BI dashboard: Completed (6 pages)
-- Project folder organization: In progress
-- Final documentation review: Pending
-- GitHub publication: Pending
+- Project folder organization: Completed
+- Project documentation: Completed
+- Dashboard screenshots: Completed (6 screenshots)
+- GitHub publication: In Progress
 - Portfolio and LinkedIn presentation: Pending
 
 ## Next Steps
 
-- Review and finalize project documentation.
-- Organize and save project screenshots in `06_Screenshots`.
-- Verify all project files and folders.
-- Publish the project on GitHub.
-- Add the project to the Data Analyst portfolio and resume.
+- Upload the project folders and files to GitHub.
+- Verify the uploaded files and folder structure.
+- Review the published project README and screenshots.
+- Add the project to my Data Analyst portfolio and resume.
 - Prepare project explanations and business insights for interviews.
