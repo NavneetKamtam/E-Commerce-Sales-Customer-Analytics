@@ -1,171 +1,191 @@
 # E-Commerce Sales & Customer Analytics
 
+An end-to-end data analytics project using Excel, Power Query, SQL, and Power BI to analyze e-commerce sales, customer behavior, product performance, and business trends.
+
 ## Project Overview
 
-This project analyzes e-commerce sales data to understand business performance, product sales, customer behavior, regional performance, payment methods, and order statuses.
+The objective of this project is to analyze e-commerce sales data and identify useful business insights. I completed data cleaning, data validation, SQL analysis, Excel reporting, and interactive Power BI dashboards.
 
-The project follows an end-to-end Data Analyst workflow using Excel, Power Query, MySQL, SQL, and Power BI.
+This project helped me understand how data analysts work with business data, from raw data preparation to reporting and presenting insights.
 
-## Business Objectives
+## Project Details
 
-- Measure overall sales, profit, and profit margin.
-- Analyze monthly sales and profit trends.
-- Identify top-performing products and categories.
-- Compare customer segments and customer types.
-- Evaluate sales and profitability by state.
-- Understand payment method usage.
-- Analyze completed, cancelled, and returned orders.
-- Identify high-value customers.
-- Validate SQL results against Excel analysis.
-- Present business insights through an interactive Power BI dashboard.
+| Item | Details |
+|---|---|
+| Project Name | E-Commerce Sales & Customer Analytics |
+| Domain | E-Commerce |
+| Total Records | 3,000 |
+| Total Columns | 18 |
+| Total Customers | 784 |
+| Total Products | 15 |
+| Data Period | January–September 2026 |
+| Tools | Excel, Power Query, MySQL, Power BI |
 
-## Tools and Technologies
+## Tools & Technologies
 
-- Microsoft Excel 2019
-- Excel Power Query
-- MySQL
-- MySQL Workbench
-- SQL
-- Power BI
+- **Microsoft Excel:** Data analysis, Pivot Tables, formulas, and KPI calculations.
+- **Power Query:** Data cleaning, transformation, standardization, and merging datasets.
+- **MySQL:** Data validation, SQL queries, aggregations, and business analysis.
+- **Power BI:** Interactive dashboards, KPI cards, and visual reporting.
 
-## Dataset Overview
+## Project Folder Structure
 
-- Total records: 3,000
-- Unique order IDs: 3,000
-- Unique customers: 784
-- Unique products: 15
-- Number of columns: 18
-- Analysis period: January – September 2026
+```text
+E-Commerce-Sales-Customer-Analytics/
+│
+├── 01_Raw_Data/
+│   ├── ecommerce_sales_raw.xlsx
+│   └── customer_master.xlsx
+│
+├── 02_Cleaned_Data/
+│   ├── Sales_Cleaned.xlsx
+│   └── ecommerce_sales_cleaned.csv
+│
+├── 03_Excel_Analysis/
+│   └── Ecommerce_Sales_Analysis.xlsx
+│
+├── 04_SQL/
+│   ├── 01_data_validation_and_order_status.sql
+│   ├── 02_monthly_sales_profit_trends.sql
+│   ├── 03_product_performance_analysis.sql
+│   ├── 04_customer_segment_analysis.sql
+│   ├── 05_regional_performance_analysis.sql
+│   ├── 06_payment_method_analysis.sql
+│   ├── 07_customer_type_analysis.sql
+│   ├── 08_category_performance_analysis.sql
+│   ├── 09_customer_level_analysis.sql
+│   ├── 10_overall_business_kpi_summary.sql
+│   ├── 11_completed_orders_performance.sql
+│   └── 12_final_data_validation.sql
+│
+├── 05_PowerBI/
+│   └── Ecommerce_Sales_Customer_Analytics.pbix
+│
+├── 06_Screenshots/
+│   ├── 01_Executive_Overview.png
+│   ├── 02_Customer_Analysis.png
+│   ├── 03_Regional_Analysis.png
+│   ├── 04_Payment_Analysis.png
+│   ├── 05_Order_Status_Analysis.png
+│   └── 06_Product_Analysis.png
+│
+├── 07_Documentation/
+│   ├── Project_Methodology.docx
+│   ├── Business_Insights_and_Recommendations.docx
+│   ├── Data_Dictionary.xlsx
+│   └── Data_Quality_Issues.xlsx
+│
+└── README.md
+```
 
-The dataset includes order details, customer information, products, categories, locations, quantities, prices, discounts, sales, profit, payment methods, and order statuses.
+## Data Cleaning & Preparation
 
-## Data Cleaning
+I used Power Query to prepare the raw sales data for analysis.
 
-The data preparation process included:
+Main activities:
 
-- Removing blank rows.
-- Removing verified duplicate records.
-- Merging customer master data.
-- Filling missing customer names and cities using the customer master.
-- Standardizing inconsistent state, category, and payment mode values.
-- Setting appropriate data types.
-- Validating key fields and financial values.
-- Creating a cleaned dataset for analysis.
+- Checked and corrected column names and data types.
+- Removed duplicate transactions.
+- Handled missing values.
+- Cleaned unnecessary spaces and inconsistent text.
+- Standardized state names.
+- Merged the sales dataset with the Customer Master dataset using Customer ID.
+- Filled missing customer details using the matching customer reference data.
+- Created additional date-related columns such as Year, Month, and Quarter.
+- Validated the cleaned dataset before analysis.
 
-## Excel Analysis
+The final cleaned sales dataset contains 3,000 records and 18 columns.
 
-Excel and Power Query were used for:
+## Key Business KPIs
 
-- Data cleaning and transformation.
-- KPI calculations.
-- Monthly sales and profit analysis.
-- Product and category analysis.
-- Customer and customer segment analysis.
-- Regional analysis.
-- Payment method analysis.
-- Order status analysis.
-- Data quality validation.
+| KPI | Result |
+|---|---:|
+| Total Sales | ₹58,159,801.49 |
+| Total Profit | ₹8,207,879.29 |
+| Profit Margin | 14.11% |
+| Total Orders | 3,000 |
+| Total Customers | 784 |
+| Total Quantity Sold | 5,157 |
+| Average Order Value | ₹19,386.60 |
+| Returned Orders | 152 |
+| Return Rate | 5.07% |
+| Cancellation Rate | 6.83% |
+| Completion Rate | 88.10% |
 
-## SQL Analysis
+## Key Business Insights
 
-SQL scripts cover:
-
-1. Data validation and order-status analysis
-2. Monthly sales and profit trends
-3. Product performance
-4. Customer segment performance
-5. Regional performance by state
-6. Payment method analysis
-7. Customer type analysis
-8. Product category performance
-9. Customer-level performance
-10. Overall business KPI summary
-11. Completed-orders performance
-12. Final data validation
-
-All 12 SQL analysis and validation scripts are saved in the `04_SQL` folder.
+- Electronics generated the highest sales and profit among product categories.
+- Laptop was the best-performing product in terms of sales and profit.
+- Gujarat recorded the highest sales among the states.
+- March recorded the highest monthly sales.
+- June recorded the highest monthly profit.
+- UPI was the most frequently used payment method, accounting for approximately 40.20% of orders.
+- Consumer customers contributed the highest total sales.
+- Small Business customers had the highest average order value among customer segments.
 
 ## Power BI Dashboard
 
-The Power BI dashboard contains six completed report pages:
+I created six interactive dashboard pages to understand different areas of the business.
 
-1. **Executive Overview** – Overall sales, profit, profit margin, monthly trends, and category performance.
-2. **Customer Analysis** – Customer segment and customer type sales and profit analysis.
-3. **Regional Analysis** – Sales and profit performance across states.
-4. **Payment Analysis** – Sales and profit by payment method, with a payment mode slicer.
-5. **Order Status Analysis** – Completed, cancelled, and returned orders, including sales and profit.
-6. **Product Analysis** – Product sales and profit performance, with a category slicer.
+### 1. Executive Overview
 
-The dashboard uses a consistent design with KPI cards, charts, a common header, and interactive filtering where appropriate.
+![Executive Overview](06_Screenshots/01_Executive_Overview.png)
 
-## Key Findings
+### 2. Customer Analysis
 
-- Total recorded sales: ₹58,159,801.49
-- Total recorded profit: ₹8,207,879.29
-- Overall recorded profit margin: 14.11%
-- Total order records: 3,000
-- Unique customers: 784
-- Unique products: 15
-- Completed orders: 2,643 (88.10%)
-- Cancelled orders: 205 (6.83%)
-- Returned orders: 152 (5.07%)
-- Completed-order sales: ₹51,814,875.52
-- Completed-order recorded profit: ₹7,338,479.23
-- Completed-order profit margin: 14.16%
+![Customer Analysis](06_Screenshots/02_Customer_Analysis.png)
 
-## Business Insights
+### 3. Regional Analysis
 
-- Electronics generated the highest recorded sales and profit among product categories.
-- Laptop was the best-selling product and the highest-profit product.
-- Gujarat generated the highest sales among the analyzed states.
-- UPI was the most-used payment method, accounting for approximately 40.20% of order records.
-- Consumer customers generated the largest total sales.
-- Small Business customers had the highest average order value among customer segments.
-- Completed orders had positive recorded profit in the dataset.
+![Regional Analysis](06_Screenshots/03_Regional_Analysis.png)
 
-## Validation
+### 4. Payment Analysis
 
-SQL validation confirmed:
+![Payment Analysis](06_Screenshots/04_Payment_Analysis.png)
 
-- 3,000 total records.
-- 3,000 unique order IDs.
-- 784 unique customers.
-- No NULL values in the six validated key fields.
-- Order-status counts add up to 3,000.
-- Sales, profit, and profit margin match the Excel analysis.
+### 5. Order Status Analysis
 
-## Important Limitation
+![Order Status Analysis](06_Screenshots/05_Order_Status_Analysis.png)
 
-The recorded profit values are based on the supplied dataset. They should not be interpreted as final company net profit unless all relevant operating expenses, taxes, and accounting adjustments are included.
+### 6. Product Analysis
 
-The dataset contains synthetic or practice-project data and should not be presented as actual company financial information.
+![Product Analysis](06_Screenshots/06_Product_Analysis.png)
 
-## Project Structure
+## Business Recommendations
 
-- `01_Raw_Data` — Original dataset
-- `02_Cleaned_Data` — Cleaned dataset for analysis and SQL import
-- `03_Excel_Analysis` — Excel analysis and KPI summaries
-- `04_SQL` — SQL analysis and validation scripts
-- `05_PowerBI` — Power BI dashboard files
-- `06_Screenshots` — Project screenshots
-- `07_Documentation` — Project documentation and data-quality records
-- `README.md` — Project overview and documentation
+- Focus on high-performing products such as laptops to maintain sales performance.
+- Review the reasons behind product returns and cancellations.
+- Study the sales performance of lower-performing states to identify growth opportunities.
+- Monitor payment method preferences and customer purchasing behavior.
+- Develop suitable strategies for different customer segments.
+
+## Project Limitations
+
+- The dataset contains practice data created for learning and portfolio purposes.
+- The available data covers January to September 2026 only.
+- Recorded profit figures are based on the dataset and should not automatically be treated as audited net profit.
+
+## What I Learned
+
+Through this project, I gained practical experience in:
+
+- Cleaning and transforming data using Power Query.
+- Working with Excel formulas and Pivot Tables.
+- Writing SQL queries for business analysis.
+- Validating data and checking data quality.
+- Building interactive dashboards using Power BI.
+- Identifying business trends and communicating insights.
 
 ## Project Status
 
 - Excel data cleaning and analysis: Completed
 - SQL analysis and validation: Completed
 - Power BI dashboard: Completed (6 pages)
-- Project folder organization: Completed
 - Project documentation: Completed
-- Dashboard screenshots: Completed (6 screenshots)
-- GitHub publication: In Progress
-- Portfolio and LinkedIn presentation: Pending
+- GitHub repository organization: Completed
 
-## Next Steps
+## Author
 
-- Upload the project folders and files to GitHub.
-- Verify the uploaded files and folder structure.
-- Review the published project README and screenshots.
-- Add the project to my Data Analyst portfolio and resume.
-- Prepare project explanations and business insights for interviews.
+**Navneet Kamtam**
+
+GitHub: [NavneetKamtam](https://github.com/NavneetKamtam)
